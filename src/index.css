@@ -10,7 +10,6 @@
     0,
     0.8
   ); /* background color overlay for alert dialogs, modals, etc. */
-  --nav-bg: #a388ee;
   --bg: #fef2e8;
   --bw: #fff; /* white and secondary black e.g. utility class variant would be: bg-[#fff] dark:bg-[#212121] */
   --blank: #000; /* blank black and white */

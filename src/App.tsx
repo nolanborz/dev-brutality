@@ -31,7 +31,7 @@ function App() {
           <h1 className="text-6xl font-bold relative wiggle-on-hover">
             NOLAN BORZONI
           </h1>
-          <div className="bg-yellow-300 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)] px-4 py-2 rounded-lg transform rotate-3 hover:rotate-0 transition-transform duration-300">
+          <div className="bg-cyan-300 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)] px-4 py-2 rounded-lg transform rotate-3 hover:rotate-0 transition-transform duration-300">
             <span className="text-xl font-bold">Developer</span>
           </div>
         </header>
@@ -56,7 +56,7 @@ function App() {
         <main>
           {activeTab === "about" ? (
             <div>
-              <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+              <h2 className="text-3xl font-extrabold mb-4">About Me</h2>
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="flex-shrink-0">
                   <img
@@ -104,6 +104,82 @@ function App() {
             </div>
           )}
         </main>
+        <footer className="mt-16">
+          <div className="relative">
+            {/* Decorative elements */}
+            <div className="absolute -top-12 left-10 transform rotate-12">
+              <div className="w-16 h-16 bg-pink-300 border-2 border-black rounded-full"></div>
+            </div>
+            <div className="absolute -top-8 right-16 transform -rotate-6">
+              <div className="w-12 h-12 bg-yellow-300 border-2 border-black rounded-md"></div>
+            </div>
+
+            {/* Main footer container */}
+            <div className="relative bg-white border-2 border-black rounded-lg p-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)]">
+              <h2 className="text-3xl font-extrabold mb-6">Let's Connect!</h2>
+
+              {/* Contact grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Email section */}
+                <div className="bg-cyan-200 border-2 border-black rounded-lg p-4 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.8)] transform hover:-translate-y-1 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">Email Me</h3>
+                  <p className="font-medium">nolan@example.com</p>
+                </div>
+
+                {/* Social links */}
+                <div className="bg-emerald-200 border-2 border-black rounded-lg p-4 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.8)] transform hover:-translate-y-1 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">Social</h3>
+                  <ul className="flex flex-col space-y-2">
+                    <li className="font-medium">
+                      <a
+                        href="#"
+                        className="flex items-center gap-2 hover:underline"
+                      >
+                        <span className="inline-block w-6 h-6 bg-black rounded-full"></span>
+                        GitHub
+                      </a>
+                    </li>
+                    <li className="font-medium">
+                      <a
+                        href="#"
+                        className="flex items-center gap-2 hover:underline"
+                      >
+                        <span className="inline-block w-6 h-6 bg-black rounded-full"></span>
+                        LinkedIn
+                      </a>
+                    </li>
+                    <li className="font-medium">
+                      <a
+                        href="#"
+                        className="flex items-center gap-2 hover:underline"
+                      >
+                        <span className="inline-block w-6 h-6 bg-black rounded-full"></span>
+                        Twitter
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Location */}
+                <div className="bg-yellow-200 border-2 border-black rounded-lg p-4 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.8)] transform hover:-translate-y-1 transition-transform duration-300">
+                  <h3 className="text-xl font-bold mb-2">Location</h3>
+                  <p className="font-medium">Hokkaido, Japan</p>
+                  <p className="font-medium text-sm mt-2">
+                    Currently available for remote work
+                  </p>
+                </div>
+              </div>
+
+              {/* Footer note */}
+              <div className="mt-10 text-center">
+                <p className="inline-block bg-gray-100 border-2 border-black px-4 py-2 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,0.8)] transform rotate-1">
+                  <span className="font-bold">© 2025 Nolan Borzoni</span> • Made
+                  with 💻 in Japan
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
