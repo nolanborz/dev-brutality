@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
   --font-light: 300;
   --font-regular: 400;
@@ -44,4 +43,27 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wiggle-on-hover:hover {
+  animation: wiggle 0.5s ease-in-out;
+  animation-iteration-count: infinite;
 }
