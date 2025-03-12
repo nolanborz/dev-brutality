@@ -34,9 +34,14 @@ const AboutMe: React.FC = () => {
           </p>
           <p className="mb-4 text-lg font-medium">
             My technical skills include JavaScript, Ruby, Ruby on Rails, React,
-            TypeScript, and Vite (how I built this website). I'm particularly
-            interested in creating websites and experiences users of all
-            abilities can navigate through effortlessly.
+            TypeScript, Vite (how I built this website), HTML, and CSS. I'm
+            particularly interested in creating websites and experiences users
+            of all abilities can navigate effortlessly.
+          </p>
+          <p className="mb-4 text-lg font-medium">
+            I am also fluent in Japanese and JLPT N2 Certification (January,
+            2023). I can listen, speak, and read confidently, and am aiming
+            towards N1 Certification.
           </p>
           <p className="mb-4 text-lg font-medium">
             When I'm not coding, you can find me reading about Ancient Rome,
