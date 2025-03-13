@@ -9,6 +9,18 @@ const __dirname = dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Force HTTPS redirect for Heroku
+app.use((req, res, next) => {
+  // Heroku specific header to detect if request came through HTTPS
+  if (
+    req.headers["x-forwarded-proto"] !== "https" &&
+    process.env.NODE_ENV === "production"
+  ) {
+    return res.redirect(301, `https://${req.headers.host}${req.url}`);
+  }
+  next();
+});
+
 // Serve static files
 app.use(express.static(join(__dirname, "dist")));
 
