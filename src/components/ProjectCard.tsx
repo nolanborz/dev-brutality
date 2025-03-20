@@ -1,5 +1,5 @@
 import React from "react";
-import { TranslatedText, useLanguage } from "./LanguageToggle";
+import { useLanguage } from "./LanguageToggle";
 
 interface ProjectCardProps {
   image: string;
