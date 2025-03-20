@@ -1,6 +1,7 @@
 // components/Footer.tsx
 import React from "react";
 import ConnectCard from "./ConnectCard";
+import { TranslatedText } from "./LanguageToggle";
 
 const Footer: React.FC = () => {
   return (
@@ -18,11 +19,23 @@ const Footer: React.FC = () => {
           <h2 className="text-3xl font-extrabold mb-6">Let's Connect!</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <ConnectCard title="Email Me" bgColor="bg-cyan-200">
-              <p className="font-medium">nolanrborzoni@gmail.com</p>
+            <ConnectCard
+              titleEn="Contact Me"
+              titleJa="お問い合わせ"
+              bgColor="bg-yellow-200"
+            >
+              <TranslatedText
+                en="Feel free to reach out for collaborations or questions!"
+                ja="共同作業や質問がありましたら、お気軽にご連絡ください！"
+              />
+              <p>nolanrborzoni@gmail.com</p>
             </ConnectCard>
 
-            <ConnectCard title="Social" bgColor="bg-emerald-200">
+            <ConnectCard
+              titleEn="Social"
+              titleJa="ソーシャル"
+              bgColor="bg-emerald-200"
+            >
               <ul className="flex flex-col space-y-2">
                 <li className="font-medium">
                   <a
@@ -54,12 +67,18 @@ const Footer: React.FC = () => {
               </ul>
             </ConnectCard>
 
-            <ConnectCard title="Career" bgColor="bg-yellow-200">
-              <p className="font-medium text-m mt-2">
-                Currently looking for a Software Development role anywhere in
+            <ConnectCard
+              titleEn="Career"
+              titleJa="キャリア"
+              bgColor="bg-yellow-200"
+            >
+              <TranslatedText
+                en="Currently looking for a Software Development role anywhere in
                 Japan or in the USA, and am available to relocate immediately.
-                Please reach out to me by email.
-              </p>
+                Please reach out to me by email."
+                ja="仕事を探しています。何かあったら教えてください。"
+                className="font-medium text-m mt-2"
+              />
             </ConnectCard>
           </div>
 

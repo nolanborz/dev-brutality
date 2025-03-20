@@ -1,6 +1,7 @@
 // components/Navigation.tsx
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { TranslatedText } from "./LanguageToggle";
 
 interface NavigationProps {
   activeTab: "about" | "work";
