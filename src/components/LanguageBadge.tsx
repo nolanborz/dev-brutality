@@ -7,7 +7,7 @@ const LanguageBadge: React.FC = () => {
       style={{ transformOrigin: "center" }}
     >
       <div className="bg-blue-400 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)] px-4 py-2 rounded-lg">
-        <span className="text-lg font-bold">日本語 OK, JLPT N2</span>
+        <span className="text-lg font-bold">日本語</span>
       </div>
     </div>
   );

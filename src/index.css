@@ -3,22 +3,14 @@
 @tailwind utilities;
 
 :root {
+  /* These are the default values that will be immediately overridden by ThemeContext */
   --main: #ffdc58;
-  --overlay: rgba(
-    0,
-    0,
-    0,
-    0.8
-  ); /* background color overlay for alert dialogs, modals, etc. */
   --bg: #fef2e8;
-  --bw: #fff; /* white and secondary black e.g. utility class variant would be: bg-[#fff] dark:bg-[#212121] */
-  --blank: #000; /* blank black and white */
   --border: #000;
   --text: #000;
-  --mtext: #000; /* text that is placed on background with main color e.g. text color of default button */
-  --ring: #000;
-  --ring-offset: #fff;
+  --accent: #ff8c00;
 
+  /* Keep your existing variables */
   --border-radius: 5px;
   --box-shadow-x: 4px;
   --box-shadow-y: 4px;
@@ -28,4 +20,15 @@
   --heading-font-weight: 700;
 
   --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+}
+
+/* Add smooth transitions for color changes */
+body,
+button,
+a,
+div {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
