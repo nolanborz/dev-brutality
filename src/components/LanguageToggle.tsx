@@ -1,7 +1,6 @@
 import React, { useState, createContext, useContext, ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 
-// Create a language context
 type Language = "en" | "ja";
 type LanguageContextType = {
   language: Language;
@@ -12,7 +11,6 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
   undefined
 );
 
-// Language provider component
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
@@ -41,7 +39,7 @@ export const LanguageToggle: React.FC = () => {
   };
 
   return (
-    <div className="px-2 py-1 rounded-md">
+    <div>
       <Button
         variant="neutral"
         onClick={toggleLanguage}

@@ -4,9 +4,9 @@ import { TranslatedText, useLanguage } from "./LanguageToggle";
 interface ProjectCardProps {
   image: string;
   title: string;
-  titleJa?: string; // Optional Japanese title
+  titleJa?: string;
   description: string;
-  descriptionJa?: string; // Optional Japanese description
+  descriptionJa?: string;
   techStack: string;
   liveSite?: string;
   github?: string;
@@ -24,7 +24,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const { language } = useLanguage();
 
-  // Use Japanese text if available and language is set to Japanese, otherwise use English
   const displayTitle = language === "ja" && titleJa ? titleJa : title;
   const displayDescription =
     language === "ja" && descriptionJa ? descriptionJa : description;

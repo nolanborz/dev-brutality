@@ -1,4 +1,3 @@
-// components/AboutMe.tsx
 import React from "react";
 import myImage from "@/assets/nolan.png";
 import { TranslatedText } from "./LanguageToggle";

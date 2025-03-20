@@ -1,4 +1,3 @@
-// components/ConnectCard.tsx
 import React, { ReactNode } from "react";
 import { TranslatedText } from "./LanguageToggle";
 

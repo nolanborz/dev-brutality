@@ -16,7 +16,11 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="relative bg-white border-2 border-black rounded-lg p-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)]">
-          <h2 className="text-3xl font-extrabold mb-6">Let's Connect!</h2>
+          <TranslatedText
+            en="Let's Connect!"
+            ja="コネクトしましょう！"
+            className="text-3xl font-extrabold mb-6"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <ConnectCard
@@ -74,8 +78,7 @@ const Footer: React.FC = () => {
             >
               <TranslatedText
                 en="Currently looking for a Software Development role anywhere in
-                Japan or in the USA, and am available to relocate immediately.
-                Please reach out to me by email."
+                Japan or in the USA, and am available to relocate immediately."
                 ja="仕事を探しています。何かあったら教えてください。"
                 className="font-medium text-m mt-2"
               />
