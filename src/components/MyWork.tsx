@@ -49,7 +49,7 @@ const MyWork: React.FC = () => {
         "Avramaxは私の現在進行中のプロジェクトで、私の好きなカードゲーム「遊戯王」のオンライン対戦アプリケーションです。13,000枚以上のカードデータベースを素早くフィルタリングし検索するためにRuby on Rails APIバックエンドを使用し、フロントエンドにはすべての対話処理のためにReactを採用する予定です。",
 
       techStack: "Ruby on Rails, React, PostgreSQL",
-      github: "https://github.com/yourusername/project-repo",
+      github: "https://github.com/nolanborz/avramax",
     },
   ];
 

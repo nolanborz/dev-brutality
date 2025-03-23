@@ -7,12 +7,11 @@ const Footer: React.FC = () => {
   return (
     <footer className="mt-16">
       <div className="relative">
-        {/* Decorative elements */}
         <div className="absolute -top-12 left-10 transform rotate-12">
-          <div className="w-16 h-16 bg-pink-300 border-2 border-black rounded-full"></div>
+          <div className="w-16 h-16 bg-blue-300 border-2 border-black rounded-full"></div>
         </div>
         <div className="absolute -top-8 right-16 transform -rotate-6">
-          <div className="w-12 h-12 bg-yellow-300 border-2 border-black rounded-md"></div>
+          <div className="w-12 h-12 bg-orange-300 border-2 border-black rounded-md"></div>
         </div>
 
         <div className="relative bg-white border-2 border-black rounded-lg p-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)]">
@@ -26,7 +25,7 @@ const Footer: React.FC = () => {
             <ConnectCard
               titleEn="Contact Me"
               titleJa="お問い合わせ"
-              bgColor="bg-yellow-200"
+              bgColor="bg-red-200"
             >
               <TranslatedText
                 en="Feel free to reach out for collaborations or questions!"
