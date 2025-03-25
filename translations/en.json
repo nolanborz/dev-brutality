@@ -1,0 +1,28 @@
+{ "navButtons": {
+  "aboutMeButton": "About Me",
+  "myWorkButton": "My Work",
+  "languageButton": "日本語"
+  },
+  "aboutMe": {
+    "header": "About Me",
+    "contentIntro": "Hi, I'm Nolan! I'm a software developer living in Hokkaido, Japan. I moved from my home of Utah, USA, to Japan 3 years ago via the JET Program to teach English, and have spent the last 12 months learning Web Development. I spent most of my learning completing the Odin Project, an open source full-stack development curriculum for Ruby on Rails and React. Since finishing the bootcamp, I've began building my own applications while searching for a full-time position.",
+    "contentSkills1": "My technical skills include JavaScript, Ruby, Ruby on Rails, React, TypeScript, Vite (how I built this website), HTML, and CSS. I'm particularly interested in creating websites and experiences users of all abilities can navigate effortlessly.",
+    "contentSkills2": "I am also fluent in Japanese and JLPT N2 Certification (January, 2023). I can listen, speak, and read confidently, and am aiming towards N1 Certification.",
+    "contentHobbies": "When I'm not coding, you can find me reading about Ancient Rome, playing basketball, or spending time with my wonderful wife."
+  },
+  "footer": {
+    "header": "Let's Connect!",
+    "contactCard": {
+    "header": "Contact Me",
+    "content1": "Feel free to reach out for collaborations or questions!",
+    "content2": "nolanrborzoni@gmail.com"
+    },
+    "socialsCard": {
+      "header": "Socials"
+    },
+    "careerCard": {
+      "career": "Career",
+      "content": "Currently looking for a Software Development role anywhere in Japan or in the USA, and am available to relocate immediately."
+    }
+  }
+}

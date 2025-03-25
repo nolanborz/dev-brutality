@@ -17,9 +17,11 @@
     "clsx": "^2.1.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "i18next": "^24.2.3",
     "lucide-react": "^0.479.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -42,6 +44,6 @@
     "vite": "^6.2.1"
   },
   "engines": {
-  "node": "22.x"
-}
+    "node": "22.x"
+  }
 }
