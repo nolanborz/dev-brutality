@@ -1,7 +1,7 @@
 { "navButtons": {
   "aboutMeButton": "私について",
   "myWorkButton": "My Work",
-  "languageButton": "日本語"
+  "languageButton": "English"
   },
   "aboutMe": {
     "header": "私について",
