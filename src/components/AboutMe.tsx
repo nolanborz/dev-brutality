@@ -1,15 +1,14 @@
 import React from "react";
 import myImage from "@/assets/nolan.png";
 import { TranslatedText } from "./LanguageToggle";
+import { useTranslation } from "react-i18next";
 
 const AboutMe: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <TranslatedText
-        en="About Me"
-        ja="私について"
-        className="text-3xl font-extrabold mb-4"
-      />
+      <h2 className="text-3xl font-extrabold mb-4">{t("aboutMe.header")}</h2>
       <div className="flex flex-col md:flex-row gap-8">
         <div className="flex-shrink-0">
           <img
