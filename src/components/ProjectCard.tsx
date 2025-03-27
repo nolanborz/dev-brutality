@@ -1,12 +1,10 @@
 import React from "react";
-import { useLanguage } from "./LanguageToggle";
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps {
   image: string;
-  title: string;
-  titleJa?: string;
-  description: string;
-  descriptionJa?: string;
+  titleKey: string;
+  descriptionKey: string;
   techStack: string;
   liveSite?: string;
   github?: string;
@@ -14,36 +12,29 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
-  title,
-  titleJa,
-  description,
-  descriptionJa,
+  titleKey,
+  descriptionKey,
   techStack,
   liveSite,
   github,
 }) => {
-  const { language } = useLanguage();
-
-  const displayTitle = language === "ja" && titleJa ? titleJa : title;
-  const displayDescription =
-    language === "ja" && descriptionJa ? descriptionJa : description;
+  const { t } = useTranslation();
 
   return (
     <div className="bg-white rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)] p-4 flex flex-col md:flex-row h-full gap-4">
       <div className="md:w-1/2 flex-shrink-0 overflow-hidden rounded border-2 border-black">
-        <img src={image} alt={title} className="w-full h-full object-cover" />
+        <img
+          src={image}
+          alt={t(titleKey)}
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="md:w-1/2 flex flex-col">
-        <h3 className="text-xl font-bold mb-2">{displayTitle}</h3>
+        <h3 className="text-xl font-bold mb-2">{t(titleKey)}</h3>
         <div className="overflow-y-auto h-32 mb-4 pr-2">
-          <p className="mb-4">{displayDescription}</p>
+          <p className="mb-4">{t(descriptionKey)}</p>
         </div>
-        <p className="mb-2 text-sm">
-          <span className="font-semibold">
-            {language === "ja" ? "使用技術:" : "Tech Stack:"}
-          </span>{" "}
-          {techStack}
-        </p>
+        <p className="mb-2 text-sm">{techStack}</p>
         <div className="mt-auto flex justify-between gap-2">
           {liveSite && (
             <a
@@ -52,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               rel="noopener noreferrer"
               className="flex-1 bg-blue-400 border-2 border-black py-2 px-3 rounded font-medium text-center shadow-[2px_2px_0px_0px_rgba(0,0,0,0.8)] hover:translate-y-0.5 hover:translate-x-0.5 hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,0.8)] transition-all"
             >
-              {language === "ja" ? "サイトを見る" : "View Site"}
+              {liveSite}
             </a>
           )}
           {github && (

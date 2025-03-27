@@ -46,9 +46,6 @@
       "title": "Avramax",
       "description": "Avramax, my current project, is an online dueling application for Yugioh, my favorite card game. It features a Ruby on Rails API back-end to filter and query through a 13,000 card database quickly, and will use a React front-end to handle all of the interactions.",
       "techStack": "Tech Stack: Ruby on Rails, React, PostgreSQL"
-    },
-    "cardButtons": {
-      "demoButton": "Demo"
     }
   }
 }
