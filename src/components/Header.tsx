@@ -1,6 +1,9 @@
 // import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Header: React.FC = () => {
+  const { t } = useTranslation();
+
   // const [showTooltip, setShowTooltip] = useState(false);
 
   return (

@@ -1,9 +1,11 @@
 // components/Footer.tsx
 import React from "react";
 import ConnectCard from "./ConnectCard";
-import { TranslatedText } from "./LanguageToggle";
+import { useTranslation } from "react-i18next";
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="mt-16">
       <div className="relative">
@@ -15,28 +17,19 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="relative bg-white border-2 border-black rounded-lg p-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)]">
-          <TranslatedText
-            en="Let's Connect!"
-            ja="コネクトしましょう！"
-            className="text-3xl font-extrabold mb-6"
-          />
+          <h2 className="text-3xl font-extrabold mb-6">{t("footer.header")}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <ConnectCard
-              titleEn="Contact Me"
-              titleJa="お問い合わせ"
+              title={t("footer.contactCard.header")}
               bgColor="bg-red-200"
             >
-              <TranslatedText
-                en="Feel free to reach out for collaborations or questions!"
-                ja="共同作業や質問がありましたら、お気軽にご連絡ください！"
-              />
-              <p>nolanrborzoni@gmail.com</p>
+              <p className="mb-2">{t("footer.contactCard.content1")}</p>
+              <p className="font-medium">{t("footer.contactCard.content2")}</p>
             </ConnectCard>
 
             <ConnectCard
-              titleEn="Social"
-              titleJa="ソーシャル"
+              title={t("footer.socialsCard.header")}
               bgColor="bg-emerald-200"
             >
               <ul className="flex flex-col space-y-2">
@@ -71,16 +64,12 @@ const Footer: React.FC = () => {
             </ConnectCard>
 
             <ConnectCard
-              titleEn="Career"
-              titleJa="キャリア"
+              title={t("footer.careerCard.career")}
               bgColor="bg-yellow-200"
             >
-              <TranslatedText
-                en="Currently looking for a Software Development role anywhere in
-                Japan or in the USA, and am available to relocate immediately."
-                ja="仕事を探しています。何かあったら教えてください。"
-                className="font-medium text-m mt-2"
-              />
+              <p className="font-medium text-m mt-2">
+                {t("footer.careerCard.content")}
+              </p>
             </ConnectCard>
           </div>
 

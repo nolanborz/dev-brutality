@@ -5,8 +5,11 @@ import pokeshopper from "@/assets/pokeshopper.png";
 import brutality from "@/assets/brutality.png";
 import classified from "@/assets/classifiedstamp.png";
 import { TranslatedText } from "./LanguageToggle";
+import { useTranslation } from "react-i18next";
 
 const MyWork: React.FC = () => {
+  const { t } = useTranslation();
+
   const projects = [
     {
       image: borzoniBook,
@@ -55,11 +58,7 @@ const MyWork: React.FC = () => {
 
   return (
     <div className="my-work-section">
-      <TranslatedText
-        en="My Work"
-        ja="私の作品"
-        className="text-3xl font-extrabold mb-4"
-      />
+      <h2 className="text-3xl font-extrabold mb-4">{t("myWork.header")}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <ProjectCard

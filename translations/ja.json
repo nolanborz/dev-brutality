@@ -1,28 +1,54 @@
 { "navButtons": {
   "aboutMeButton": "私について",
-  "myWorkButton": "My Work",
+  "myWorkButton": "私の作品",
   "languageButton": "English"
   },
   "aboutMe": {
     "header": "私について",
-    "contentIntro": "こんにちは！! I'm a software developer living in Hokkaido, Japan. I moved from my home of Utah, USA, to Japan 3 years ago via the JET Program to teach English, and have spent the last 12 months learning Web Development. I spent most of my learning completing the Odin Project, an open source full-stack development curriculum for Ruby on Rails and React. Since finishing the bootcamp, I've began building my own applications while searching for a full-time position.",
-    "contentSkills1": "My technical skills include JavaScript, Ruby, Ruby on Rails, React, TypeScript, Vite (how I built this website), HTML, and CSS. I'm particularly interested in creating websites and experiences users of all abilities can navigate effortlessly.",
-    "contentSkills2": "I am also fluent in Japanese and JLPT N2 Certification (January, 2023). I can listen, speak, and read confidently, and am aiming towards N1 Certification.",
-    "contentHobbies": "When I'm not coding, you can find me reading about Ancient Rome, playing basketball, or spending time with my wonderful wife."
+    "contentIntro": "こんにちは、ノーランです！北海道に住むソフトウェア開発者です。3年前にJETプログラムを通じて英語を教えるために出身地のアメリカ・ユタ州から日本に移住し、この12ヶ月間はウェブ開発を学んできました。学習の大部分はOdinプロジェクト（Ruby on RailsとReactのオープンソースフルスタック開発カリキュラム）を完了することに費やしました。ブートキャンプを終えた後は、フルタイムの職を探しながら独自のアプリケーションの構築を始めました。",
+    "contentSkills1": "私の技術スキルには、JavaScript、Ruby、Ruby on Rails、React、TypeScript、Vite（このウェブサイトの構築方法）、HTML、CSSが含まれます。特に、あらゆる能力のユーザーが簡単に操作できるウェブサイトや体験の作成に興味を持っています。",
+    "contentSkills2": "また、日本語も流暢で、JLPT N2認定（2023年1月）を取得しています。自信を持って聞き、話し、読むことができ、N1認定を目指しています。",
+    "contentHobbies": "コーディングをしていない時は、古代ローマについて読んだり、バスケットボールをしたり、素晴らしい妻と時間を過ごしたりしています。"
   },
   "footer": {
-    "header": "Let's Connect!",
+    "header": "つながりましょう",
     "contactCard": {
-    "header": "Contact Me",
-    "content1": "Feel free to reach out for collaborations or questions!",
+    "header": "お問い合わせ",
+    "content1": "共同作業や質問がありましたら、お気軽にご連絡ください！",
     "content2": "nolanrborzoni@gmail.com"
     },
     "socialsCard": {
       "header": "ソーシャル"
     },
     "careerCard": {
-      "career": "Career",
-      "content": "Currently looking for a Software Development role anywhere in Japan or in the USA, and am available to relocate immediately."
+      "career": "キャリア",
+      "content": "仕事を探しています。何かあったら教えてください。"
+    }
+  },
+  "myWork": {
+    "header": "私の作品",
+    "card1": {
+      "title": "Borzonibook",
+      "description": "プロフィールの作成とカスタマイズ、お気に入りのユーザーのフォロー、他の人の投稿へのいいねやコメントが可能です。Ruby on Railsで完全に構築され、Herokuを通じて公開されたこのプロジェクトでは、ユーザー、いいね、投稿、フォローなどの接続を進める中で、データベース関係をより深く理解することが求められました。",
+      "techStack": "使用技術: Ruby on Rails, PostgreSQL, Hotwire, Stimulus, Tailwind CSS, Heroku"
+    },
+    "card2": {
+      "title": "Pokeshopper",
+      "description": "タイプでポケモンをフィルタリングし、カートに追加して、注文フォームに記入し、チェックアウトできます。PokeShopperはPokeAPIを使用してランダムなポケモンのデータを取得し、Railsがそれらを商品に変換します。APIの操作に加えて、HotwireとStimulusはUIを動的に更新するために重要でした。",
+      "techStack": "使用技術: Ruby on Rails, PostgreSQL, Hotwire, Stimulus, Tailwind CSS"
+    },
+    "card3": {
+      "title": "開発ポートフォリオ",
+      "description": "これは私が作ったポートフォリオサイトで、ネオブルータリズムデザインを採用しています。現在ご覧いただいているこのウェブサイトです。",
+      "techStack": "使用技術: JavaScript, React, TypeScript, Vite, Heroku"
+    },
+    "card4": {
+      "title": "Avramax",
+      "description": "Avramaxは私の現在進行中のプロジェクトで、私の好きなカードゲーム「遊戯王」のオンライン対戦アプリケーションです。13,000枚以上のカードデータベースを素早くフィルタリングし検索するためにRuby on Rails APIバックエンドを使用し、フロントエンドにはすべての対話処理のためにReactを採用する予定です。",
+      "techStack": "使用技術: Ruby on Rails, React, PostgreSQL"
+    },
+    "cardButtons": {
+      "demoButton": "サイトを見る"
     }
   }
 }

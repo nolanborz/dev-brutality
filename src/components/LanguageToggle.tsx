@@ -24,7 +24,6 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
   const [language, setLanguage] = useState<Language>("en");
   const { i18n } = useTranslation();
 
-  // Keep i18next in sync with your context
   useEffect(() => {
     i18n.changeLanguage(language);
   }, [language, i18n]);
