@@ -17,7 +17,7 @@ interface Theme {
 const themes: Theme[] = [
   {
     main: "#ffdc58",
-    bg: "#fef2e8",
+    bg: "#FFFFFF",
     border: "#000",
     text: "#000",
     accent: "#ff8c00",

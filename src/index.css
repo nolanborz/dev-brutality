@@ -3,14 +3,12 @@
 @tailwind utilities;
 
 :root {
-  /* These are the default values that will be immediately overridden by ThemeContext */
-  --main: #ffdc58;
+  --main: #ffffff;
   --bg: #fef2e8;
   --border: #000;
   --text: #000;
   --accent: #ff8c00;
 
-  /* Keep your existing variables */
   --border-radius: 5px;
   --box-shadow-x: 4px;
   --box-shadow-y: 4px;
@@ -22,7 +20,6 @@
   --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
 }
 
-/* Add smooth transitions for color changes */
 body,
 button,
 a,
