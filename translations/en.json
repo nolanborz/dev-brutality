@@ -6,7 +6,7 @@
   "aboutMe": {
     "header": "About Me",
     "contentIntro": "Hi, I'm Nolan! I'm a software developer living in Hokkaido, Japan. Three years ago, I moved from the USA to Japan to teach English via the JET (Japan Exchange Teaching) Program. One year ago, out of a desire to learn a new, marketable skill I could spearhead a career with, I began learning software development through the Odin Project. Through it I've gained a strong foundation of front-end and back-end development principles, as well as development experience using Rails and React.",
-    "contentSkills1": "My technical skills include JavaScript, Ruby, Ruby on Rails, HTML, and CSS. I also developed skills in React and TypeScript, which I used to build this website. I'm particularly interested in creating websites and applications which provide users of all abilities a superb experience.",
+    "contentSkills1": "My technical skills include JavaScript, Ruby, Ruby on Rails, HTML, and CSS. I'm particularly interested in creating websites and applications which provide users of all abilities a superb experience.",
     "contentSkills2": "I have JLPT N2 Certification (January, 2023) and can speak, read, and write Japanese at a Business-level.",
     "contentHobbies": "When I'm not coding, you can find me playing basketball, reading about history, or spending time with my wonderful wife."
   },
