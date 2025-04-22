@@ -5,7 +5,7 @@ interface ProjectCardProps {
   image: string;
   titleKey: string;
   descriptionKey: string;
-  techStack: string;
+  techStackKey: string;
   liveSite?: string;
   github?: string;
 }
@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
   titleKey,
   descriptionKey,
-  techStack,
+  techStackKey,
   liveSite,
   github,
 }) => {
@@ -34,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="overflow-y-auto h-32 mb-4 pr-2">
           <p className="mb-4">{t(descriptionKey)}</p>
         </div>
-        <p className="mb-2 text-sm">{techStack}</p>
+        <p className="mb-2 text-sm">{t(techStackKey)}</p>
         <div className="mt-auto flex justify-between gap-2">
           {liveSite && (
             <a
